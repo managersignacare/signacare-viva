@@ -1,0 +1,61 @@
+name: viva
+description: Viva by Signacare — patient companion app for mental health care
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.11.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  dio: ^5.4.3
+  flutter_riverpod: ^2.4.9
+  flutter_secure_storage: ^9.2.2
+  flutter_svg: ^2.0.10+1
+  flutter_local_notifications: ^18.0.1
+
+  # Phase 11B — push notifications from the Phase 12 patient outreach
+  # dispatcher. firebase_core + firebase_messaging wake the Viva app
+  # when a push arrives (including cold-start); when the app is
+  # foreground, firebase_messaging delivers silently and
+  # flutter_local_notifications (already declared above) renders the
+  # banner. The backend sends in MOCK mode in dev/CI —
+  # firebase-admin is an optional peer dep — so the app gracefully
+  # continues working if Firebase isn't configured.
+  firebase_core: ^3.6.0
+  firebase_messaging: ^15.1.3
+
+  intl: ^0.19.0
+  fl_chart: ^0.70.2
+  shared_preferences: ^2.3.4
+  url_launcher: ^6.3.1
+
+  # Phase 11B document cache — resolves the app documents directory so
+  # patient attachments downloaded via the mobile-sync endpoint's
+  # pre-signed URLs can be persisted to disk and opened offline. The
+  # backend returns a fresh 1h-TTL signed URL per sync; the cache key
+  # is server_updated_at, so stale files are evicted on next successful
+  # delta.
+  path_provider: ^2.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/app-icon.png"
+  adaptive_icon_background: "#7B1FA2"
+  adaptive_icon_foreground: "assets/app-icon.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/signacare-logo.svg
+    - assets/app-icon.png
