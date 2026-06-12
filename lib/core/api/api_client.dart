@@ -139,6 +139,13 @@ class PatientApiClient {
     if (patientId != null) await setPatientId(patientId);
     return body;
   }
+
+  Future<Map<String, dynamic>> submitRegistrationRequest(Map<String, dynamic> payload) async {
+    await init();
+    final r = await _dio.post('/patient-app/register', data: payload,
+        options: Options(headers: {'X-Client': 'patient-app'}));
+    return Map<String, dynamic>.from(r.data as Map);
+  }
 }
 
 final pApi = PatientApiClient.instance;

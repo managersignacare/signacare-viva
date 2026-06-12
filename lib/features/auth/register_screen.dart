@@ -1,4 +1,6 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import '../../core/api/api_client.dart';
 import '../../core/theme.dart';
 
 /// Patient self-registration — mirrors desktop patient registration fields.
@@ -12,6 +14,9 @@ class _PatientRegisterState extends State<PatientRegisterScreen> {
   int _step = 0;
   final _formKey = GlobalKey<FormState>();
 
+  // Step 0: Clinic
+  final _clinicName = TextEditingController();
+
   // Step 0: Personal
   final _givenName = TextEditingController();
   final _familyName = TextEditingController();
@@ -20,7 +25,6 @@ class _PatientRegisterState extends State<PatientRegisterScreen> {
   String _gender = '';
   final _phone = TextEditingController();
   final _email = TextEditingController();
-  final _password = TextEditingController();
 
   // Step 1: Address
   final _street = TextEditingController();
@@ -44,14 +48,15 @@ class _PatientRegisterState extends State<PatientRegisterScreen> {
   final _supportPhone = TextEditingController();
 
   bool _registering = false;
+  bool _consentToContact = false;
   String? _error;
 
-  static const _steps = ['Personal', 'Address', 'Next of Kin', 'GP / Provider', 'Support Person'];
+  static const _steps = ['Clinic', 'Personal', 'Address', 'Next of Kin', 'GP / Provider', 'Support Person'];
   static const _genders = ['Male', 'Female', 'Non-binary', 'Other', 'Prefer not to say'];
 
   @override
   void dispose() {
-    for (final c in [_givenName, _familyName, _preferredName, _dob, _phone, _email, _password,
+    for (final c in [_clinicName, _givenName, _familyName, _preferredName, _dob, _phone, _email,
         _street, _suburb, _state, _postcode, _nokName, _nokRelationship, _nokPhone,
         _gpName, _gpPractice, _gpPhone, _supportName, _supportRelationship, _supportPhone]) {
       c.dispose();
@@ -59,14 +64,113 @@ class _PatientRegisterState extends State<PatientRegisterScreen> {
     super.dispose();
   }
 
+  String? _normalizeDobForRequest(String rawDob) {
+    final value = rawDob.trim();
+    if (value.isEmpty) return null;
+    if (RegExp(r'^\d{4}-\d{2}-\d{2}$').hasMatch(value)) return value;
+    final au = RegExp(r'^(\d{2})\/(\d{2})\/(\d{4})$').firstMatch(value);
+    if (au == null) return value;
+    return '${au.group(3)!}-${au.group(2)!}-${au.group(1)!}';
+  }
+
+  bool _isAcceptedDob(String rawDob) {
+    final normalized = _normalizeDobForRequest(rawDob);
+    return normalized != null && RegExp(r'^\d{4}-\d{2}-\d{2}$').hasMatch(normalized);
+  }
+
+  bool _hasRequiredDetails() {
+    return _givenName.text.trim().isNotEmpty &&
+        _familyName.text.trim().isNotEmpty &&
+        _isAcceptedDob(_dob.text) &&
+        _phone.text.trim().length >= 8;
+  }
+
+  String _serverError(DioException e) {
+    final responseData = e.response?.data;
+    if (responseData is Map && responseData['error'] is String) {
+      return responseData['error'] as String;
+    }
+    if (responseData is Map && responseData['message'] is String) {
+      return responseData['message'] as String;
+    }
+    final details = responseData is Map ? responseData['details'] : null;
+    if (details is List && details.isNotEmpty) {
+      final first = details.first;
+      if (first is Map && first['message'] is String) return first['message'] as String;
+    }
+    return e.message ?? 'Check your connection and try again.';
+  }
+
   Future<void> _register() async {
+    if (!(_formKey.currentState?.validate() ?? false) || !_hasRequiredDetails()) {
+      setState(() => _error = 'Please complete your name, date of birth and mobile number before submitting.');
+      return;
+    }
+    if (!_consentToContact) {
+      setState(() => _error = 'Please confirm that the clinic may contact you about this registration request.');
+      return;
+    }
+    final normalizedDob = _normalizeDobForRequest(_dob.text);
+    if (normalizedDob == null || !_isAcceptedDob(_dob.text)) {
+      setState(() => _error = 'Enter date of birth as DD/MM/YYYY or YYYY-MM-DD.');
+      return;
+    }
+
+    final payload = <String, dynamic>{
+      if (_clinicName.text.trim().isNotEmpty) 'clinicName': _clinicName.text.trim(),
+      'givenName': _givenName.text.trim(),
+      'familyName': _familyName.text.trim(),
+      if (_preferredName.text.trim().isNotEmpty) 'preferredName': _preferredName.text.trim(),
+      'dateOfBirth': normalizedDob,
+      if (_gender.isNotEmpty) 'gender': _gender,
+      'phoneMobile': _phone.text.trim(),
+      if (_email.text.trim().isNotEmpty) 'email': _email.text.trim(),
+      'address': {
+        if (_street.text.trim().isNotEmpty) 'street': _street.text.trim(),
+        if (_suburb.text.trim().isNotEmpty) 'suburb': _suburb.text.trim(),
+        if (_state.text.trim().isNotEmpty) 'state': _state.text.trim(),
+        if (_postcode.text.trim().isNotEmpty) 'postcode': _postcode.text.trim(),
+      },
+      'nextOfKin': {
+        if (_nokName.text.trim().isNotEmpty) 'name': _nokName.text.trim(),
+        if (_nokRelationship.text.trim().isNotEmpty) 'relationship': _nokRelationship.text.trim(),
+        if (_nokPhone.text.trim().isNotEmpty) 'phone': _nokPhone.text.trim(),
+      },
+      'gp': {
+        if (_gpName.text.trim().isNotEmpty) 'name': _gpName.text.trim(),
+        if (_gpPractice.text.trim().isNotEmpty) 'practice': _gpPractice.text.trim(),
+        if (_gpPhone.text.trim().isNotEmpty) 'phone': _gpPhone.text.trim(),
+      },
+      'supportPerson': {
+        if (_supportName.text.trim().isNotEmpty) 'name': _supportName.text.trim(),
+        if (_supportRelationship.text.trim().isNotEmpty) 'relationship': _supportRelationship.text.trim(),
+        if (_supportPhone.text.trim().isNotEmpty) 'phone': _supportPhone.text.trim(),
+      },
+      'clientRequestId': 'viva-${DateTime.now().millisecondsSinceEpoch}',
+      'consentToContact': _consentToContact,
+    };
+
     setState(() { _registering = true; _error = null; });
-    // TODO: POST to patient registration API endpoint when available
-    await Future.delayed(const Duration(seconds: 1));
-    if (mounted) {
+    try {
+      final result = await pApi.submitRegistrationRequest(payload);
+      final message = result['message'] as String? ??
+          'Registration submitted. Your clinic will contact you about activation.';
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Registration submitted — your clinic will activate your account'), backgroundColor: kSuccess));
+        SnackBar(content: Text(message), backgroundColor: kSuccess));
       Navigator.pop(context);
+    } on DioException catch (e) {
+      if (!mounted) return;
+      setState(() {
+        _registering = false;
+        _error = 'Registration failed: ${_serverError(e)}';
+      });
+    } catch (e) {
+      if (!mounted) return;
+      setState(() {
+        _registering = false;
+        _error = 'Registration failed: $e';
+      });
     }
   }
 
@@ -97,11 +201,12 @@ class _PatientRegisterState extends State<PatientRegisterScreen> {
             child: Form(
               key: _formKey,
               child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-                if (_step == 0) ..._personalFields(),
-                if (_step == 1) ..._addressFields(),
-                if (_step == 2) ..._nokFields(),
-                if (_step == 3) ..._gpFields(),
-                if (_step == 4) ..._supportFields(),
+                if (_step == 0) ..._clinicFields(),
+                if (_step == 1) ..._personalFields(),
+                if (_step == 2) ..._addressFields(),
+                if (_step == 3) ..._nokFields(),
+                if (_step == 4) ..._gpFields(),
+                if (_step == 5) ..._supportFields(),
 
                 if (_error != null) Padding(
                   padding: const EdgeInsets.only(top: 12),
@@ -118,7 +223,9 @@ class _PatientRegisterState extends State<PatientRegisterScreen> {
                   Expanded(child: ElevatedButton(
                     onPressed: _registering ? null : () {
                       if (_step < _steps.length - 1) {
-                        setState(() => _step++);
+                        if (_formKey.currentState?.validate() ?? false) {
+                          setState(() => _step++);
+                        }
                       } else {
                         _register();
                       }
@@ -136,6 +243,20 @@ class _PatientRegisterState extends State<PatientRegisterScreen> {
     );
   }
 
+  List<Widget> _clinicFields() => [
+    const _SectionLabel('Clinic / Service'),
+    const Text(
+      'If your app has been preconfigured for one clinic, you can leave this blank. Otherwise enter the clinic or service name.',
+      style: TextStyle(fontSize: 12, color: kTextLight),
+    ),
+    const SizedBox(height: 12),
+    TextFormField(
+      controller: _clinicName,
+      decoration: const InputDecoration(labelText: 'Clinic or service name'),
+      textInputAction: TextInputAction.next,
+    ),
+  ];
+
   List<Widget> _personalFields() => [
     const _SectionLabel('Your Details'),
     TextFormField(controller: _givenName, decoration: const InputDecoration(labelText: 'First Name *'),
@@ -147,7 +268,8 @@ class _PatientRegisterState extends State<PatientRegisterScreen> {
     TextFormField(controller: _preferredName, decoration: const InputDecoration(labelText: 'Preferred Name')),
     const SizedBox(height: 12),
     TextFormField(controller: _dob, decoration: const InputDecoration(labelText: 'Date of Birth *', hintText: 'DD/MM/YYYY'),
-      keyboardType: TextInputType.datetime),
+      keyboardType: TextInputType.datetime,
+      validator: (v) => !_isAcceptedDob(v ?? '') ? 'Enter DD/MM/YYYY or YYYY-MM-DD' : null),
     const SizedBox(height: 12),
     DropdownButtonFormField<String>(
       initialValue: _gender.isEmpty ? null : _gender,
@@ -160,9 +282,6 @@ class _PatientRegisterState extends State<PatientRegisterScreen> {
       keyboardType: TextInputType.phone, validator: (v) => v == null || v.length < 8 ? 'Enter mobile number' : null),
     const SizedBox(height: 12),
     TextFormField(controller: _email, decoration: const InputDecoration(labelText: 'Email'), keyboardType: TextInputType.emailAddress),
-    const SizedBox(height: 12),
-    TextFormField(controller: _password, decoration: const InputDecoration(labelText: 'Create Password *'),
-      obscureText: true, validator: (v) => v == null || v.length < 6 ? 'Min 6 characters' : null),
   ];
 
   List<Widget> _addressFields() => [
@@ -207,6 +326,17 @@ class _PatientRegisterState extends State<PatientRegisterScreen> {
     TextFormField(controller: _supportRelationship, decoration: const InputDecoration(labelText: 'Relationship')),
     const SizedBox(height: 12),
     TextFormField(controller: _supportPhone, decoration: const InputDecoration(labelText: 'Phone'), keyboardType: TextInputType.phone),
+    const SizedBox(height: 16),
+    CheckboxListTile(
+      value: _consentToContact,
+      onChanged: (value) => setState(() => _consentToContact = value ?? false),
+      contentPadding: EdgeInsets.zero,
+      controlAffinity: ListTileControlAffinity.leading,
+      title: const Text('I consent to the clinic contacting me about this registration request.'),
+      subtitle: const Text(
+        'Submitting registration creates a reviewed intake request only. It does not create a patient account until clinic staff approve and invite you.',
+      ),
+    ),
   ];
 }
 

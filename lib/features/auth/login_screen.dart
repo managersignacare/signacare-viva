@@ -6,6 +6,7 @@ import '../../core/services/auth_service.dart';
 import '../../core/api/api_client.dart';
 import '../home/home_screen.dart';
 import 'activate_screen.dart';
+import 'register_screen.dart';
 
 class PatientLoginScreen extends ConsumerStatefulWidget {
   const PatientLoginScreen({super.key});
@@ -109,6 +110,12 @@ class _PatientLoginState extends ConsumerState<PatientLoginScreen> {
                 onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ActivateScreen())),
                 icon: const Icon(Icons.qr_code_2),
                 label: const Text('I Have an Activation Code'),
+              ),
+              const SizedBox(height: 10),
+              TextButton.icon(
+                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const PatientRegisterScreen())),
+                icon: const Icon(Icons.person_add_alt_1_outlined),
+                label: const Text('Request Access / Register'),
               ),
               const SizedBox(height: 20),
 

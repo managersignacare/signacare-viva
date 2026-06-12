@@ -1,0 +1,699 @@
+apps/patient-app/.gitignore
+apps/patient-app/.metadata
+apps/patient-app/README.md
+apps/patient-app/analysis_options.yaml
+apps/patient-app/android/.gitignore
+apps/patient-app/android/.gradle/8.14/checksums/checksums.lock
+apps/patient-app/android/.gradle/8.14/checksums/md5-checksums.bin
+apps/patient-app/android/.gradle/8.14/checksums/sha1-checksums.bin
+apps/patient-app/android/.gradle/8.14/fileChanges/last-build.bin
+apps/patient-app/android/.gradle/8.14/fileHashes/fileHashes.bin
+apps/patient-app/android/.gradle/8.14/fileHashes/fileHashes.lock
+apps/patient-app/android/.gradle/8.14/fileHashes/resourceHashesCache.bin
+apps/patient-app/android/.gradle/8.14/gc.properties
+apps/patient-app/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock
+apps/patient-app/android/.gradle/buildOutputCleanup/cache.properties
+apps/patient-app/android/.gradle/noVersion/buildLogic.lock
+apps/patient-app/android/.gradle/vcs-1/gc.properties
+apps/patient-app/android/app/build.gradle.kts
+apps/patient-app/android/app/proguard-rules.pro
+apps/patient-app/android/app/src/debug/AndroidManifest.xml
+apps/patient-app/android/app/src/main/AndroidManifest.xml
+apps/patient-app/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+apps/patient-app/android/app/src/main/kotlin/com/signacare/viva/MainActivity.kt
+apps/patient-app/android/app/src/main/res/drawable-v21/launch_background.xml
+apps/patient-app/android/app/src/main/res/drawable/launch_background.xml
+apps/patient-app/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+apps/patient-app/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+apps/patient-app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+apps/patient-app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+apps/patient-app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+apps/patient-app/android/app/src/main/res/values-night/styles.xml
+apps/patient-app/android/app/src/main/res/values/styles.xml
+apps/patient-app/android/app/src/main/res/xml/network_security_config.xml
+apps/patient-app/android/app/src/profile/AndroidManifest.xml
+apps/patient-app/android/build.gradle.kts
+apps/patient-app/android/gradle.properties
+apps/patient-app/android/gradle/wrapper/gradle-wrapper.jar
+apps/patient-app/android/gradle/wrapper/gradle-wrapper.properties
+apps/patient-app/android/gradlew
+apps/patient-app/android/gradlew.bat
+apps/patient-app/android/settings.gradle.kts
+apps/patient-app/assets/app-icon.png
+apps/patient-app/assets/signacare-logo.svg
+apps/patient-app/ios/.gitignore
+apps/patient-app/ios/Flutter/AppFrameworkInfo.plist
+apps/patient-app/ios/Flutter/Debug.xcconfig
+apps/patient-app/ios/Flutter/Flutter.podspec
+apps/patient-app/ios/Flutter/Generated.xcconfig
+apps/patient-app/ios/Flutter/Release.xcconfig
+apps/patient-app/ios/Flutter/ephemeral/flutter_lldb_helper.py
+apps/patient-app/ios/Flutter/ephemeral/flutter_lldbinit
+apps/patient-app/ios/Flutter/flutter_export_environment.sh
+apps/patient-app/ios/Podfile
+apps/patient-app/ios/Podfile.lock
+apps/patient-app/ios/Pods/Firebase/CoreOnly/Sources/Firebase.h
+apps/patient-app/ios/Pods/Firebase/CoreOnly/Sources/module.modulemap
+apps/patient-app/ios/Pods/Firebase/LICENSE
+apps/patient-app/ios/Pods/Firebase/README.md
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Extension/FIRAppInternal.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Extension/FIRComponent.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Extension/FIRComponentContainer.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Extension/FIRComponentType.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Extension/FIRHeartbeatLogger.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Extension/FIRLibrary.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Extension/FIRLogger.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Extension/FirebaseCoreInternal.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRAnalyticsConfiguration.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRAnalyticsConfiguration.m
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRApp.m
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRBundleUtil.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRBundleUtil.m
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRComponent.m
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRComponentContainer.m
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRComponentContainerInternal.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRComponentType.m
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRConfiguration.m
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRConfigurationInternal.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRFirebaseUserAgent.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRFirebaseUserAgent.m
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRHeartbeatLogger.m
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRLogger.m
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIROptions.m
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIROptionsInternal.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRTimestamp.m
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRTimestampInternal.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/FIRVersion.m
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRApp.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRConfiguration.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRLoggerLevel.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIROptions.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRTimestamp.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRVersion.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FirebaseCore.h
+apps/patient-app/ios/Pods/FirebaseCore/FirebaseCore/Sources/Resources/PrivacyInfo.xcprivacy
+apps/patient-app/ios/Pods/FirebaseCore/LICENSE
+apps/patient-app/ios/Pods/FirebaseCore/README.md
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Heartbeat.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatController.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatLoggingTestUtils.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatStorage.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsBundle.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsPayload.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/RingBuffer.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Storage.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/StorageFactory.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/WeakContainer.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatController.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatsPayload.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/Resources/PrivacyInfo.xcprivacy
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/Utilities/AtomicBox.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/Utilities/FIRAllocatedUnfairLock.swift
+apps/patient-app/ios/Pods/FirebaseCoreInternal/LICENSE
+apps/patient-app/ios/Pods/FirebaseCoreInternal/README.md
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRAppInternal.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRComponent.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRComponentContainer.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRComponentType.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRHeartbeatLogger.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRLibrary.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRLogger.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseCore/Extension/FirebaseCoreInternal.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Errors/FIRInstallationsErrorUtil.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Errors/FIRInstallationsErrorUtil.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Errors/FIRInstallationsHTTPError.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Errors/FIRInstallationsHTTPError.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallations.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsAuthTokenResult.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsAuthTokenResultInternal.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsItem.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsItem.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsLogger.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsLogger.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/IIDMigration/FIRInstallationsIIDStore.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/IIDMigration/FIRInstallationsIIDStore.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/IIDMigration/FIRInstallationsIIDTokenStore.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/IIDMigration/FIRInstallationsIIDTokenStore.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsAPIService.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsAPIService.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsItem+RegisterInstallationAPI.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsItem+RegisterInstallationAPI.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRCurrentDateProvider.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRCurrentDateProvider.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsBackoffController.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsBackoffController.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsSingleOperationPromiseCache.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsSingleOperationPromiseCache.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsStatus.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStore.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStore.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredAuthToken.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredAuthToken.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredItem.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredItem.m
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Private/FirebaseInstallationsInternal.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallations.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsAuthTokenResult.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsErrors.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FirebaseInstallations.h
+apps/patient-app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Resources/PrivacyInfo.xcprivacy
+apps/patient-app/ios/Pods/FirebaseInstallations/LICENSE
+apps/patient-app/ios/Pods/FirebaseInstallations/README.md
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRAppInternal.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRComponent.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRComponentContainer.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRComponentType.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRHeartbeatLogger.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRLibrary.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRLogger.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseCore/Extension/FirebaseCoreInternal.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseInstallations/Source/Library/Private/FirebaseInstallationsInternal.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Interop/FIRMessagingInterop.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessaging+ExtensionHelper.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessaging.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingAnalytics.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingAnalytics.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingCode.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingConstants.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingConstants.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingContextManagerService.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingContextManagerService.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingDefines.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingExtensionHelper.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingLogger.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingLogger.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingPendingTopicsList.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingPendingTopicsList.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingPersistentSyncMessage.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingPersistentSyncMessage.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingPubSub.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingPubSub.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingRemoteNotificationsProxy.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingRemoteNotificationsProxy.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingRmqManager.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingRmqManager.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingSyncMessageManager.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingSyncMessageManager.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingTopicOperation.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingTopicOperation.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingTopicsCommon.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingUtilities.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingUtilities.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessaging_Private.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FirebaseMessaging.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/NSDictionary+FIRMessaging.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/NSDictionary+FIRMessaging.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/NSError+FIRMessaging.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/NSError+FIRMessaging.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Protogen/nanopb/me.nanopb.c
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Protogen/nanopb/me.nanopb.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Public/FirebaseMessaging/FIRMessaging+ExtensionHelper.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Public/FirebaseMessaging/FIRMessaging.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Public/FirebaseMessaging/FIRMessagingExtensionHelper.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Public/FirebaseMessaging/FirebaseMessaging.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Resources/PrivacyInfo.xcprivacy
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingAPNSInfo.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingAPNSInfo.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingAuthKeychain.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingAuthKeychain.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingAuthService.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingAuthService.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingBackupExcludedPlist.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingBackupExcludedPlist.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingCheckinPreferences.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingCheckinPreferences.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingCheckinService.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingCheckinService.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingCheckinStore.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingCheckinStore.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingKeychain.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingKeychain.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenDeleteOperation.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenDeleteOperation.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenFetchOperation.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenFetchOperation.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenInfo.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenInfo.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenManager.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenManager.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenOperation.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenOperation.m
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenStore.h
+apps/patient-app/ios/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenStore.m
+apps/patient-app/ios/Pods/FirebaseMessaging/Interop/Analytics/Public/FIRAnalyticsInterop.h
+apps/patient-app/ios/Pods/FirebaseMessaging/Interop/Analytics/Public/FIRAnalyticsInteropListener.h
+apps/patient-app/ios/Pods/FirebaseMessaging/Interop/Analytics/Public/FIRInteropEventNames.h
+apps/patient-app/ios/Pods/FirebaseMessaging/Interop/Analytics/Public/FIRInteropParameterNames.h
+apps/patient-app/ios/Pods/FirebaseMessaging/LICENSE
+apps/patient-app/ios/Pods/FirebaseMessaging/README.md
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/GDTCCTCompressionHelper.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/GDTCCTNanopbHelpers.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/GDTCCTURLSessionDataResponse.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/GDTCCTUploadOperation.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/GDTCCTUploader.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/GDTCOREvent+GDTCCTSupport.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/GDTCOREvent+GDTMetricsSupport.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/GDTCORMetrics+GDTCCTSupport.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Private/GDTCCTCompressionHelper.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Private/GDTCCTNanopbHelpers.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Private/GDTCCTURLSessionDataResponse.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Private/GDTCCTUploadOperation.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Private/GDTCCTUploader.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Private/GDTCOREvent+GDTMetricsSupport.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Private/GDTCORMetrics+GDTCCTSupport.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/cct.nanopb.c
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/cct.nanopb.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/client_metrics.nanopb.c
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/client_metrics.nanopb.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/compliance.nanopb.c
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/compliance.nanopb.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/external_prequest_context.nanopb.c
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/external_prequest_context.nanopb.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/external_privacy_context.nanopb.c
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/external_privacy_context.nanopb.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Public/GDTCOREvent+GDTCCTSupport.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORAssert.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORClock.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORConsoleLogger.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORDirectorySizeTracker.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCOREndpoints.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCOREvent.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORFlatFileStorage+Promises.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORFlatFileStorage.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORLifecycle.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORLogSourceMetrics.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORMetrics.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORMetricsController.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORMetricsMetadata.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORPlatform.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORProductData.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORReachability.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORRegistrar.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORStorageEventSelector.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORStorageMetadata.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORTransformer.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORTransport.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORUploadBatch.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/GDTCORUploadCoordinator.m
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Internal/GDTCORAssert.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Internal/GDTCORDirectorySizeTracker.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Internal/GDTCOREventDropReason.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Internal/GDTCORLifecycle.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Internal/GDTCORMetricsControllerProtocol.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Internal/GDTCORPlatform.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Internal/GDTCORReachability.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Internal/GDTCORRegistrar.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Internal/GDTCORStorageEventSelector.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Internal/GDTCORStorageProtocol.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Internal/GDTCORStorageSizeBytes.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Internal/GDTCORUploader.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCOREndpoints_Private.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCOREvent_Private.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORFlatFileStorage+Promises.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORFlatFileStorage.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORLogSourceMetrics.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORMetrics.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORMetricsController.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORMetricsMetadata.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORReachability_Private.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORRegistrar_Private.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORStorageMetadata.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORTransformer.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORTransformer_Private.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORTransport_Private.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORUploadBatch.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Private/GDTCORUploadCoordinator.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORClock.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORConsoleLogger.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREndpoints.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREvent.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREventDataObject.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREventTransformer.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORProductData.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORTargets.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORTransport.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GoogleDataTransport.h
+apps/patient-app/ios/Pods/GoogleDataTransport/GoogleDataTransport/Resources/PrivacyInfo.xcprivacy
+apps/patient-app/ios/Pods/GoogleDataTransport/LICENSE
+apps/patient-app/ios/Pods/GoogleDataTransport/README.md
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/GULAppDelegateSwizzler.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/GULSceneDelegateSwizzler.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Internal/GULAppDelegateSwizzler_Private.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Internal/GULSceneDelegateSwizzler_Private.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULAppDelegateSwizzler.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULApplication.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULSceneDelegateSwizzler.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Common/GULLoggerCodes.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Environment/GULAppEnvironmentUtil.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Environment/NetworkInfo/GULNetworkInfo.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULAppEnvironmentUtil.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULKeychainStorage.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULKeychainUtils.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULNetworkInfo.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Environment/SecureStorage/GULKeychainStorage.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Environment/SecureStorage/GULKeychainUtils.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Logger/GULLogger.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities/GULLogger.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities/GULLoggerLevel.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/NSData+zlib/GULNSData+zlib.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/NSData+zlib/Public/GoogleUtilities/GULNSData+zlib.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Network/GULMutableDictionary.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Network/GULNetwork.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Network/GULNetworkConstants.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Network/GULNetworkInternal.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Network/GULNetworkURLSession.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULMutableDictionary.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetwork.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkConstants.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkLoggerProtocol.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkMessageCode.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkURLSession.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Privacy/Resources/PrivacyInfo.xcprivacy
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Reachability/GULReachabilityChecker+Internal.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Reachability/GULReachabilityChecker.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Reachability/GULReachabilityMessageCode.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/Reachability/Public/GoogleUtilities/GULReachabilityChecker.h
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/UserDefaults/GULUserDefaults.m
+apps/patient-app/ios/Pods/GoogleUtilities/GoogleUtilities/UserDefaults/Public/GoogleUtilities/GULUserDefaults.h
+apps/patient-app/ios/Pods/GoogleUtilities/LICENSE
+apps/patient-app/ios/Pods/GoogleUtilities/README.md
+apps/patient-app/ios/Pods/GoogleUtilities/third_party/IsAppEncrypted/IsAppEncrypted.m
+apps/patient-app/ios/Pods/GoogleUtilities/third_party/IsAppEncrypted/Public/IsAppEncrypted.h
+apps/patient-app/ios/Pods/Local Podspecs/Flutter.podspec.json
+apps/patient-app/ios/Pods/Local Podspecs/firebase_core.podspec.json
+apps/patient-app/ios/Pods/Local Podspecs/firebase_messaging.podspec.json
+apps/patient-app/ios/Pods/Local Podspecs/flutter_local_notifications.podspec.json
+apps/patient-app/ios/Pods/Local Podspecs/flutter_secure_storage.podspec.json
+apps/patient-app/ios/Pods/Local Podspecs/shared_preferences_foundation.podspec.json
+apps/patient-app/ios/Pods/Local Podspecs/url_launcher_ios.podspec.json
+apps/patient-app/ios/Pods/Manifest.lock
+apps/patient-app/ios/Pods/Pods.xcodeproj/project.pbxproj
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/Firebase.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/FirebaseCore-FirebaseCore_Privacy.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/FirebaseCore.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/FirebaseCoreInternal-FirebaseCoreInternal_Privacy.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/FirebaseCoreInternal.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/FirebaseInstallations-FirebaseInstallations_Privacy.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/FirebaseInstallations.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/FirebaseMessaging-FirebaseMessaging_Privacy.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/FirebaseMessaging.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/Flutter.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/GoogleDataTransport-GoogleDataTransport_Privacy.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/GoogleDataTransport.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/GoogleUtilities-GoogleUtilities_Privacy.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/GoogleUtilities.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/Pods-Runner.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/Pods-RunnerTests.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/PromisesObjC-FBLPromises_Privacy.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/PromisesObjC.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/firebase_core.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/firebase_messaging-firebase_messaging_Privacy.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/firebase_messaging.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/flutter_local_notifications-flutter_local_notifications_privacy.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/flutter_local_notifications.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/flutter_secure_storage-flutter_secure_storage.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/flutter_secure_storage.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/nanopb-nanopb_Privacy.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/nanopb.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/shared_preferences_foundation-shared_preferences_foundation_privacy.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/shared_preferences_foundation.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/url_launcher_ios-url_launcher_ios_privacy.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/url_launcher_ios.xcscheme
+apps/patient-app/ios/Pods/Pods.xcodeproj/xcuserdata/drprakashkamath.xcuserdatad/xcschemes/xcschememanagement.plist
+apps/patient-app/ios/Pods/PromisesObjC/LICENSE
+apps/patient-app/ios/Pods/PromisesObjC/README.md
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+All.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Always.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Any.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Async.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Await.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Catch.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Delay.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Do.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Race.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Recover.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Reduce.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Retry.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Testing.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Then.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Timeout.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Validate.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise+Wrap.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromise.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/FBLPromiseError.m
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/Resources/PrivacyInfo.xcprivacy
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+All.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Always.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Any.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Async.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Await.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Catch.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Delay.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Do.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Race.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Recover.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Reduce.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Retry.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Testing.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Then.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Timeout.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Validate.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Wrap.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromiseError.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromisePrivate.h
+apps/patient-app/ios/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromises.h
+apps/patient-app/ios/Pods/Target Support Files/Firebase/Firebase.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/Firebase/Firebase.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCore/FirebaseCore-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCore/FirebaseCore-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCore/FirebaseCore-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCore/FirebaseCore.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCore/FirebaseCore.modulemap
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCore/FirebaseCore.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCore/ResourceBundle-FirebaseCore_Privacy-FirebaseCore-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCoreInternal/FirebaseCoreInternal-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCoreInternal/FirebaseCoreInternal-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCoreInternal/FirebaseCoreInternal-prefix.pch
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCoreInternal/FirebaseCoreInternal-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCoreInternal/FirebaseCoreInternal.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCoreInternal/FirebaseCoreInternal.modulemap
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCoreInternal/FirebaseCoreInternal.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/FirebaseCoreInternal/ResourceBundle-FirebaseCoreInternal_Privacy-FirebaseCoreInternal-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/FirebaseInstallations/FirebaseInstallations-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/FirebaseInstallations/FirebaseInstallations-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/FirebaseInstallations/FirebaseInstallations-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/FirebaseInstallations/FirebaseInstallations.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/FirebaseInstallations/FirebaseInstallations.modulemap
+apps/patient-app/ios/Pods/Target Support Files/FirebaseInstallations/FirebaseInstallations.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/FirebaseInstallations/ResourceBundle-FirebaseInstallations_Privacy-FirebaseInstallations-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/FirebaseMessaging/FirebaseMessaging-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/FirebaseMessaging/FirebaseMessaging-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/FirebaseMessaging/FirebaseMessaging-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/FirebaseMessaging/FirebaseMessaging.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/FirebaseMessaging/FirebaseMessaging.modulemap
+apps/patient-app/ios/Pods/Target Support Files/FirebaseMessaging/FirebaseMessaging.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/FirebaseMessaging/ResourceBundle-FirebaseMessaging_Privacy-FirebaseMessaging-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/Flutter/Flutter.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/Flutter/Flutter.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/GoogleDataTransport/GoogleDataTransport-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/GoogleDataTransport/GoogleDataTransport-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/GoogleDataTransport/GoogleDataTransport-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/GoogleDataTransport/GoogleDataTransport.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/GoogleDataTransport/GoogleDataTransport.modulemap
+apps/patient-app/ios/Pods/Target Support Files/GoogleDataTransport/GoogleDataTransport.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/GoogleDataTransport/ResourceBundle-GoogleDataTransport_Privacy-GoogleDataTransport-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/GoogleUtilities/GoogleUtilities-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/GoogleUtilities/GoogleUtilities-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/GoogleUtilities/GoogleUtilities-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/GoogleUtilities/GoogleUtilities.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/GoogleUtilities/GoogleUtilities.modulemap
+apps/patient-app/ios/Pods/Target Support Files/GoogleUtilities/GoogleUtilities.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/GoogleUtilities/ResourceBundle-GoogleUtilities_Privacy-GoogleUtilities-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.markdown
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.plist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks-Debug-input-files.xcfilelist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks-Debug-output-files.xcfilelist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks-Profile-input-files.xcfilelist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks-Profile-output-files.xcfilelist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks-Release-input-files.xcfilelist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks-Release-output-files.xcfilelist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-resources-Debug-input-files.xcfilelist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-resources-Debug-output-files.xcfilelist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-resources-Profile-input-files.xcfilelist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-resources-Profile-output-files.xcfilelist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-resources-Release-input-files.xcfilelist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-resources-Release-output-files.xcfilelist
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-resources.sh
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.modulemap
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/Pods-RunnerTests/Pods-RunnerTests-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/Pods-RunnerTests/Pods-RunnerTests-acknowledgements.markdown
+apps/patient-app/ios/Pods/Target Support Files/Pods-RunnerTests/Pods-RunnerTests-acknowledgements.plist
+apps/patient-app/ios/Pods/Target Support Files/Pods-RunnerTests/Pods-RunnerTests-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/Pods-RunnerTests/Pods-RunnerTests-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/Pods-RunnerTests/Pods-RunnerTests.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/Pods-RunnerTests/Pods-RunnerTests.modulemap
+apps/patient-app/ios/Pods/Target Support Files/Pods-RunnerTests/Pods-RunnerTests.profile.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/Pods-RunnerTests/Pods-RunnerTests.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/PromisesObjC/PromisesObjC-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/PromisesObjC/PromisesObjC-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/PromisesObjC/PromisesObjC-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/PromisesObjC/PromisesObjC.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/PromisesObjC/PromisesObjC.modulemap
+apps/patient-app/ios/Pods/Target Support Files/PromisesObjC/PromisesObjC.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/PromisesObjC/ResourceBundle-FBLPromises_Privacy-PromisesObjC-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/firebase_core/firebase_core-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/firebase_core/firebase_core-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/firebase_core/firebase_core-prefix.pch
+apps/patient-app/ios/Pods/Target Support Files/firebase_core/firebase_core-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/firebase_core/firebase_core.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/firebase_core/firebase_core.modulemap
+apps/patient-app/ios/Pods/Target Support Files/firebase_core/firebase_core.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/firebase_messaging/ResourceBundle-firebase_messaging_Privacy-firebase_messaging-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/firebase_messaging/firebase_messaging-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/firebase_messaging/firebase_messaging-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/firebase_messaging/firebase_messaging-prefix.pch
+apps/patient-app/ios/Pods/Target Support Files/firebase_messaging/firebase_messaging-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/firebase_messaging/firebase_messaging.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/firebase_messaging/firebase_messaging.modulemap
+apps/patient-app/ios/Pods/Target Support Files/firebase_messaging/firebase_messaging.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/flutter_local_notifications/ResourceBundle-flutter_local_notifications_privacy-flutter_local_notifications-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch
+apps/patient-app/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications.modulemap
+apps/patient-app/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/flutter_secure_storage/ResourceBundle-flutter_secure_storage-flutter_secure_storage-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/flutter_secure_storage/flutter_secure_storage-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/flutter_secure_storage/flutter_secure_storage-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/flutter_secure_storage/flutter_secure_storage-prefix.pch
+apps/patient-app/ios/Pods/Target Support Files/flutter_secure_storage/flutter_secure_storage-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/flutter_secure_storage/flutter_secure_storage.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/flutter_secure_storage/flutter_secure_storage.modulemap
+apps/patient-app/ios/Pods/Target Support Files/flutter_secure_storage/flutter_secure_storage.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/nanopb/ResourceBundle-nanopb_Privacy-nanopb-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/nanopb/nanopb-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/nanopb/nanopb-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/nanopb/nanopb-prefix.pch
+apps/patient-app/ios/Pods/Target Support Files/nanopb/nanopb-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/nanopb/nanopb.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/nanopb/nanopb.modulemap
+apps/patient-app/ios/Pods/Target Support Files/nanopb/nanopb.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/shared_preferences_foundation/ResourceBundle-shared_preferences_foundation_privacy-shared_preferences_foundation-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/shared_preferences_foundation/shared_preferences_foundation-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/shared_preferences_foundation/shared_preferences_foundation-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/shared_preferences_foundation/shared_preferences_foundation-prefix.pch
+apps/patient-app/ios/Pods/Target Support Files/shared_preferences_foundation/shared_preferences_foundation-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/shared_preferences_foundation/shared_preferences_foundation.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/shared_preferences_foundation/shared_preferences_foundation.modulemap
+apps/patient-app/ios/Pods/Target Support Files/shared_preferences_foundation/shared_preferences_foundation.release.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/url_launcher_ios/ResourceBundle-url_launcher_ios_privacy-url_launcher_ios-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/url_launcher_ios/url_launcher_ios-Info.plist
+apps/patient-app/ios/Pods/Target Support Files/url_launcher_ios/url_launcher_ios-dummy.m
+apps/patient-app/ios/Pods/Target Support Files/url_launcher_ios/url_launcher_ios-prefix.pch
+apps/patient-app/ios/Pods/Target Support Files/url_launcher_ios/url_launcher_ios-umbrella.h
+apps/patient-app/ios/Pods/Target Support Files/url_launcher_ios/url_launcher_ios.debug.xcconfig
+apps/patient-app/ios/Pods/Target Support Files/url_launcher_ios/url_launcher_ios.modulemap
+apps/patient-app/ios/Pods/Target Support Files/url_launcher_ios/url_launcher_ios.release.xcconfig
+apps/patient-app/ios/Pods/nanopb/LICENSE.txt
+apps/patient-app/ios/Pods/nanopb/README.md
+apps/patient-app/ios/Pods/nanopb/pb.h
+apps/patient-app/ios/Pods/nanopb/pb_common.c
+apps/patient-app/ios/Pods/nanopb/pb_common.h
+apps/patient-app/ios/Pods/nanopb/pb_decode.c
+apps/patient-app/ios/Pods/nanopb/pb_decode.h
+apps/patient-app/ios/Pods/nanopb/pb_encode.c
+apps/patient-app/ios/Pods/nanopb/pb_encode.h
+apps/patient-app/ios/Pods/nanopb/spm_resources/PrivacyInfo.xcprivacy
+apps/patient-app/ios/Runner.xcodeproj/project.pbxproj
+apps/patient-app/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+apps/patient-app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+apps/patient-app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+apps/patient-app/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+apps/patient-app/ios/Runner.xcworkspace/contents.xcworkspacedata
+apps/patient-app/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+apps/patient-app/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+apps/patient-app/ios/Runner/AppDelegate.swift
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png
+apps/patient-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png
+apps/patient-app/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json
+apps/patient-app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png
+apps/patient-app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png
+apps/patient-app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png
+apps/patient-app/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md
+apps/patient-app/ios/Runner/Base.lproj/LaunchScreen.storyboard
+apps/patient-app/ios/Runner/Base.lproj/Main.storyboard
+apps/patient-app/ios/Runner/GeneratedPluginRegistrant.h
+apps/patient-app/ios/Runner/GeneratedPluginRegistrant.m
+apps/patient-app/ios/Runner/Info.plist
+apps/patient-app/ios/Runner/PrivacyInfo.xcprivacy
+apps/patient-app/ios/Runner/Runner-Bridging-Header.h
+apps/patient-app/ios/Runner/SceneDelegate.swift
+apps/patient-app/ios/RunnerTests/RunnerTests.swift
+apps/patient-app/lib/core/api/api_client.dart
+apps/patient-app/lib/core/generated/design_tokens.g.dart
+apps/patient-app/lib/core/offline/offline_write_queue.dart
+apps/patient-app/lib/core/services/auth_service.dart
+apps/patient-app/lib/core/services/document_cache.dart
+apps/patient-app/lib/core/services/fcm_service.dart
+apps/patient-app/lib/core/services/local_reminder_scheduler.dart
+apps/patient-app/lib/core/services/sync_client.dart
+apps/patient-app/lib/core/services/tracking_service.dart
+apps/patient-app/lib/core/theme.dart
+apps/patient-app/lib/features/activity/activity_schedule_screen.dart
+apps/patient-app/lib/features/appointments/appointments_screen.dart
+apps/patient-app/lib/features/auth/activate_screen.dart
+apps/patient-app/lib/features/auth/login_screen.dart
+apps/patient-app/lib/features/auth/register_screen.dart
+apps/patient-app/lib/features/diary/diary_screen.dart
+apps/patient-app/lib/features/digital_care/digital_care_screen.dart
+apps/patient-app/lib/features/documents/documents_screen.dart
+apps/patient-app/lib/features/emergency/emergency_screen.dart
+apps/patient-app/lib/features/home/home_screen.dart
+apps/patient-app/lib/features/messaging/messaging_screen.dart
+apps/patient-app/lib/features/mindfulness/mindfulness_screen.dart
+apps/patient-app/lib/features/patient_tasks/patient_tasks_screen.dart
+apps/patient-app/lib/features/profile/profile_screen.dart
+apps/patient-app/lib/features/rating_scales/rating_scales_screen.dart
+apps/patient-app/lib/features/recovery/recovery_goals_screen.dart
+apps/patient-app/lib/features/reminders/reminders_screen.dart
+apps/patient-app/lib/features/sync/downstream_sync_settings.dart
+apps/patient-app/lib/features/sync/sync_settings_screen.dart
+apps/patient-app/lib/features/tracking/tracking_screen.dart
+apps/patient-app/lib/features/vitals/vitals_screen.dart
+apps/patient-app/lib/main.dart
+apps/patient-app/pubspec.lock
+apps/patient-app/pubspec.yaml
+apps/patient-app/test/widget_test.dart
+apps/patient-app/web/favicon.png
+apps/patient-app/web/icons/Icon-192.png
+apps/patient-app/web/icons/Icon-512.png
+apps/patient-app/web/icons/Icon-maskable-192.png
+apps/patient-app/web/icons/Icon-maskable-512.png
+apps/patient-app/web/index.html
+apps/patient-app/web/manifest.json
